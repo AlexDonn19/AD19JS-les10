@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<title>JS-Mod10-1</title>
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="stylesheet" href="css/style-carousel.css">
+ 	<link rel="stylesheet" href="css/style-ikSelect.css">
+    <link rel="stylesheet" href="css/style-checkbox.css">
+    <link rel="stylesheet" href="css/style-checkbox-css.css">
+
+ 	<script src="js/jquery-1.11.3.js"></script>
+ 	<script src="js/jquery.jcarousel.min.js"></script>
+ 	<script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+ 	<script src="js/script.js"></script>
+</head>
+<body>
+<header>
+		<h1>jQuery plugins</h1>
+		<p>Home work - Module10 JS</p>
+</header>
+<main>
+    <section class="carousel-line">
+    	<div class="stage-wrapper clearfix">
+    		<div class="stage">
+    			<div class="stage-container">
+    				<div class="jcarousel-wrapper">
+    					<div class="jcarousel" data-jcarousel="true">
+    						<ul class="clearfix">
+    							<li><img src="img/img1.jpg"></li>
+    							<li><img src="img/img2.jpg"></li>
+    							<li><img src="img/img3.jpg"></li>
+    							<li><img src="img/img4.jpg"></li>
+    							<li><img src="img/img5.jpg"></li>
+    						</ul>
+    					</div>
+
+    					<a href="" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+    					<a href="" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+
+    					<p class="jcarousel-pagination" data-jcarouselpagination="true">
+    						<a href="#1" class="active">1</a>
+    						<a href="#2">2</a>
+    						<a href="#3">3</a>
+    						<a href="#4">4</a>
+    						<a href="#5">5</a>
+    					</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+	<section id="options" class="section select-options select-line">
+		<h2>Choose the tour</h2>
+		<select>
+			<optgroup label="Seven Wonders of the Ancient World">
+				<option>Great Pyramid of Giza</option>
+				<option>Hanging Gardens of Babylon</option>
+				<option>Statue of Zeus at Olympia</option>
+				<option>Temple of Artemis </option>
+				<option>Mausoleum at Halicarnassus</option>
+				<option>Colossus of Rhodes</option>
+				<option>Lighthouse of Alexandria</option>
+			</optgroup>
+			<optgroup label="Seven Natural Wonders of the World">
+				<option>Grand Canyon</option>
+				<option>Great Barrier Reef</option>
+				<option>Harbor of Rio de Janeiro</option>
+				<option>Mount Everest</option>
+				<option>Aurora</option>
+				<option>Parícutin volcano</option>
+				<option>Victoria Falls</option>
+			</optgroup>
+		</select>
+	</section>
+
+	<section class="check_line">
+        <div class="check_block">
+		  <h2>Look for hotels:</h2>
+          <form action="#">
+
+            <div>
+                <label for="ch1">Hotel 5 stars</label>
+                <input type="checkbox" class="niceCheck" checked="true" id="ch1" tabindex="1"/>
+            </div>
+            <div>
+                <label for="ch2">Hotel 4 stars</label>
+                <input type="checkbox" class="niceCheck" id="ch2" tabindex="2" value="2"/>
+            </div>
+            <div>
+                <label for="ch3">Hotel 3 stars</label>
+                <input type="checkbox" class="niceCheck" id="ch3" tabindex="2" value="2"/>
+            </div>
+            <div>
+                <label for="ch4">Transfert</label>
+                <input type="checkbox" class="niceCheck" id="ch4" checked="checked" disabled="disabled"/>
+            </div>
+
+           </form>
+
+        </div>
+	</section>
+
+    <section class="check_line_css">
+        <div class="check_block_css">
+            <h2>Choose additions</h2>
+            <form action="#">
+                <div class="check_css">
+                    <input type="checkbox" id="safe"/>
+                    <label for="safe">Safe</label>
+                </div>
+                <div class="check_css">
+                        <input type="checkbox" id="bar"/>
+                        <label for="bar">Bar</label>
+                </div>
+                <div class="check_css">
+                        <input type="checkbox" id="massage"/>
+                        <label for="massage">Massage</label>
+                </div>
+                <div class="check_css">
+                        <input type="checkbox" id="smoke"/>
+                        <label for="smoke">Smoke-room</label>
+                </div>
+                <div class="check_css">
+                        <input type="checkbox" id="disco"/>
+                        <label for="disco">Dance</label>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>Wellcome to our tour company.</h3>
+</footer>
+
+
+    <script src="js/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="js/jquery.ikSelect.js"></script>
+ 	<script src="js/script_ikSelect_my.js"></script>
+</body>
+</html>
